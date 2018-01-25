@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    while(表达式){
+        js代码;
+
+    }
+    表达式如果为真，则执行大括号里面的代码
+    如果为假则跳出循环，不执行大括号里的代码
+
+    */
+
+    // 例
+    // 求1~100之和
+    var i = 1/*循环的变量*/, sum = 0;/*储存累加出来的和*/
+    while(i<=100){
+        sum += i;
+        i++;
+    }
+
+    // 打印一个三角形
+    var j = 1;
+    while(j<5){
+        var i = 0;
+        while(i<j){
+            document.write("*");
+            i++;
+        }
+        document.write('<br />');
+        j++;
+    }
+
+    // 外层循环控制有多少行
+    // 内层控制每行打印多少个
+    </script>
+</body>
+</html>

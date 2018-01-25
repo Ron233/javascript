@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*do_while
+        
+        do{
+            js代码;
+        }while(表达式)
+        */ 
+
+        var i = 1, sum = 0;
+        do{
+            sum += i;
+            i++;
+        }while(i<=100)
+        console.log("sum:"+sum);
+
+        // 例
+        // 一百以内所有7的倍数
+        var i = 1, arr = [];
+        do{
+            if(i%7==0){
+                arr.push(i);
+            }
+            i++;
+        }while(i<=100)
+        console.log(arr);
+    </script>
+</body>
+</html>

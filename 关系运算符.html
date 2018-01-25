@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 关系运算符：
+        // 返回值时boolean类型
+        // ==,!=,>,<,>=,<=,====
+        // ===恒等于，变量的值要相等，变量的类型也要相等
+        // !==不恒等于，变量的值不等于或者变量的类型也不相等
+
+        console.log(3==3);//true
+        console.log(3!=4);//true
+
+        console.log(3>2);//true
+        console.log(2<4);//true
+
+        console.log(3<=4);//true
+        console.log(3>=4);//false
+
+        console.log(4==4);//true
+        console.log(1==true);//true
+
+        console.log(4===4);//true
+        console.log(1===true);//false
+
+        // ============================================
+        //字符串与数字的比较
+        // 会把字符串强制转换为数字，然后再进行比较
+        console.log("3"==3);//true
+
+        //如果是非数值的字符串，再强制转换为数字之后的得到NaN
+        //如果存在NaN，则返回false
+        console.log('hello'>3);//false
+
+        // 字符串与字符串进行比较，会先转换为ascii码再进行比较
+        //a ascii码：97，b ascii码98
+        console.log("a"<"b");//true
+
+        console.log("abas">"abbd");//false
+        // a   a   ==
+        // b   b   ==
+        // a   b   false
+        // s   d   前面已经返回结构果不需要在比较了
+
+        //boolean
+        console.log(true==1);//true
+        console.log(false==0);//true
+
+        //NaN   NaN与任何数比较都返回false
+        console.log(NaN > 3);//false
+        console.log(NaN < 3);//false
+        console.log(NaN == NaN);//false
+
+        // 特殊值
+        console.log(undefined == null);//true
+        console.log(typeof undefined == typeof null);//false
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 一元运算符
+        // ++  ：自身加1
+        // --  ：自身减1
+        //++
+        var a = 3;
+        a++;
+        ++a;
+        console.log(a);
+
+        var c = 3;
+        var b1 = c++;
+        console.log("b1:"+b1);//3,后++, c会先把值赋值给给b1，然后加1
+        
+        var c = 3;
+        var b2 = ++c;
+        console.log('b2:'+b2);//4,c先进行自身加1，再赋值给b2
+// ============================================================
+        var c = 10;
+        var b1 = c--;
+        console.log("b1:"+b1);//10,c先把值赋给b1，再--
+
+        var c = 10;
+        var b2 = --c;
+        console.log('b2:'+b2);//9,c先进行自身减1，再把值赋给b2
+
+// ===============================================================
+        // 对数值型字符串进行加加
+       
+        var a = "10";
+        a++;
+        console.log("a:"+a);//11
+
+        //对非数值型字符串进行++
+        //string
+        var a = "a";
+        a++;
+        console.log("a:"+a);//nan
+
+        //boolean,true为1，false为0
+        var a = true;
+        a++;
+        console.log("a:"+a);//2
+
+        //浮点型
+        var a = 3.3;
+        a++;
+        console.log("a:"+a);//4.3
+
+
+
+    </script>
+</body>
+</html>

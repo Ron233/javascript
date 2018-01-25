@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 逻辑运算符合
+        // 与，或，非
+        // &&,||,!
+
+        // &&,与，并且，两边都为真否则为假
+        console.log(true&&true);//true
+        console.log(true&&false);//false
+        console.log(false&&true);//false
+        console.log(false&&false);//false
+
+        //&&的短路操作，如果第一个为false则直接返回false,从前往后找遇到false直接返回false,否则继续判断
+
+        var a = 'b' && 0 && 'cc';
+        console.log(a);//0
+        var flag = true && false && true;
+        console.log('flag:'+flag);//false
+        var flag = true && true &&true
+        console.log('flag：'+flag);
+
+        //||，或，只有有真则为真
+        console.log(true||true);//true
+        console.log(false||true);//true
+        console.log(true||false);//true
+        console.log(false||false);//false
+
+        //  ||的短路操作，从头开始找，遇到true则直接返回true，否则继续查找
+        var flag2 = true || false || false;
+        console.log("flag2:"+flag2);
+        var flag2 = false || false || false;
+        console.log('flag2:'+flag2);
+        
+        //!,非，取反
+        console.log(!true);//false
+        console.log(!false);//true
+        //  string:非空字符串为true,空字符串为false
+        //Number:0或者NaN为false,a其他为true
+        //object:null为false,其他非空对象为true
+        //undefined:false
+
+    </script>
+</body>
+</html>
