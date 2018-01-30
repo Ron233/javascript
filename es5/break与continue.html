@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        break   跳出循环，switch也有break只能跳出一层
+        
+        */
+
+        // 判断一个数字是不是合数
+        var a = 13, flag = true;
+        for(var i = 2; i < a; i++){
+            if(a%i==0){
+                console.log('是合数');
+                break;
+            }
+        }
+        
+        // continue:终止此次循环继续下一循环
+        //1~100的和，但是不包含个位为3
+
+        var sum = 0;
+        for(var i = 1; i <= 100; i++){
+            if(i%10==3){
+                continue;
+            }
+            sum += i;
+        }
+        console.log(sum);
+    </script>
+</body>
+</html>

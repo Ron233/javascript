@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+        for循环
+
+        for(表达式1;表达式2;表达式3){
+                js代码;
+        }
+
+        表达式1：定义一个初始值
+        表达式2：循环条件
+        表达式3：修改变量
+
+        
+    */
+
+    //例 10的阶乘
+    var m = 1;
+    for(var i= 1; i <= 10; i++){
+        m *= i;
+    }
+    console.log(m);
+
+    //打印三角形
+
+    for(var i = 1; i <= 5; i++){
+        for(var j = 1; j <= i; j++){
+            document.write("*");
+        }
+        document.write("<br />")
+    }
+    /*
+        如果知道循环的此时，通常使用for循环
+        如果不知道循环次数通常使用while 或者do_while
+    */
+    </script>
+</body>
+</html>

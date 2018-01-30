@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        作用域
+        变量可以使用的范围
+
+        局部变量：只能在有限范围内使用
+        局部变量就是定义在函数内部的变量
+        这个变量只能在函数内部使用
+        也就是我们的左右域只是在函数的内部，另外形参也是局部变量
+
+        全局变量：定义在函数外外部的变量，在任何函数内部都有效
+        也就是当前文件的任何地方
+
+
+        for while if是没有作用域的，里面定义的变量全都是全局变量
+
+        定义变量时可以省略var但是不安全
+        */
+        var a = 2;//全局变量
+        function m(){
+            var a = 3;//局部变量
+        }
+        console.log(a);
+        console.log(b);
+
+        function m2(){
+            var m1 = 1;//局部变量
+            m2 = 2;//全局变量，因为没有var去修饰
+        }
+    </script>
+</body>
+</html>

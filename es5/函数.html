@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+   
+    <script>
+        /**
+        函数：把特定功能代码抽离出来
+
+        函数分类
+        一、内置函数（官方的函数，系统的函数）
+        二、自定义函数（开发者自己封装的函数）
+
+        自定义函数
+
+        声明变量    var 
+        定义函数    function
+
+        定义一个函数
+        function    函数名(){
+            js代码
+        }
+        
+        */ 
+
+        function prinOut(){
+            document.write("函数");
+        }
+        // 函数不会自动运行，需要主动调用
+        prinOut();
+
+        
+
+        function btnClick(){
+            var oInput  =   document.getElementById('input');
+            console.log(oInput.value);
+        }
+
+        /*
+            标准函数
+
+            function定义函数的关键字
+            (参数名1，参数名2.。。。)，可以有多个参数也可以没有
+            return  返回值，返回一个结果
+
+            function    函数名(参数){
+                    js代码;
+                    return;
+            }
+
+
+            例
+            求两数之和
+
+            function sum(one,two){
+                return  one + two;
+            }
+            var he = sum(1,2);
+            console.log('he:'+he);
+
+            形参，实参都叫参数
+            形参，函数定义的时候，函数名后的括号里的参数，不能用var来修饰
+            实参，函数调用时，函数名括号里的参数
+            参数可以传多个和函数定义没有关系
+            函数调用时形参会发生变化，实参不会发生变化
+            
+        */
+    </script>
+
+
+<div class="main">
+        <input type="text" id="input">
+        <input type="button" value="点击" onclick="btnClick()">
+    </div>
+</body>
+</html>

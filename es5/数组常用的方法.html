@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    数组常用方法
+
+    栈方法： 后进先出
+
+    对立方法先进先出
+
+    栈方法
+    push(),pop()
+    */
+    // push();//会在数组末尾添加元素
+    var arr = [1,2,3]
+    arr.push(4,5);
+    console.log(arr)
+
+    // pop();//会取出数组最后一个元素，返回值是该元素
+    var b = arr.pop();
+    console.log(arr)
+    console.log(b);
+
+
+    // 队列方法
+    // push()；会在数组的末尾添加元素
+    // shift();会在数组的前面移除元素
+    // unshift();会在数组前面添加元素
+    var b = arr.shift();
+    console.log(arr);
+    console.log(b)
+
+    arr.unshift(1);
+    console.log(arr);
+
+    // 逆向排序 reverse()
+    var b = arr.reverse();
+    console.log(arr);
+    console.log(b);
+    // arr.reverse()
+
+    // 升序排序 sort()
+    var b = arr.sort();
+    console.log(arr);
+    console.log(b);
+    // 给sort()添加规则
+    function compare(val1,val2){
+        if(val1<val2){
+            return -1;
+        }else if(val1==val2){
+            return 0;
+        }else{
+            return 1;//表示交换两个值
+        }
+    }
+    var arr = [3,1,23,4,5,6];
+    var b = arr.sort(compare);
+    console.log(b)
+
+    // concat();追加数据不改变原来数组
+    var arr = [1,2,3,4];
+    var b = arr.concat(6,7)
+    console.log(arr);
+    console.log(b);
+
+
+    // slice 取出数组中指定区域的数据,不会改变原数组
+    var arr = [1,2,3,4,5];
+    var b = arr.slice(1,3);//前闭后开
+    console.log(arr);
+    console.log(b);
+
+    // splice 去除指定区域的数据,会改变原数组
+    var arr = [2,3,4,5,6];
+    var b = arr.splice(2,3);//下标从2开始,长度是3
+    console.log(arr);
+    console.log(b);
+    // 插入操作:必须有三个以上的参数,第二参数为0
+    // 参数1:是要插入数据的下标位置
+    // 参数2:必须为0,表示插入操作,1代表替换操作,替换时没有替换的数据,则删除
+    // 参数3:是我们要插入的数据 
+    // 参数4..... 都是要插入的数据
+    var arr =[1,2,3,5,6,7];
+    var b = arr.splice(3,0,4);
+    console.log(arr);
+    console.log(b);
+
+    // 替换操作
+    var arr = [1,2,3,4,5,6];
+    var b = arr.splice(2,1,10);
+    console.log(arr);
+    console.log(b);
+
+    // 删除操作
+    var arr = [1,2,3,4,5];
+    var b = arr.splice(3,1);
+    console.log(arr);
+    console.log(b);
+
+    // join();把数组元素以字符串的的形式链接
+    var arr = [1,2,3,4]
+    var b = arr.join("-");
+    console.log(arr);
+    console.log(b);
+    </script>
+</body>
+</html>

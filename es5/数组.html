@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+        数组：一组数据，一般是相同类型，不一定只存数字
+        Array
+    */
+    // 创建数组
+    var box = new Array();//创建了一个空数组
+    var box1 = new Array(10);//创建了一个数组，长度为10
+    var box2 = new Array(10,20,30);//超过两个参数那么就是数组里的元素
+    var box3 = new Array('hello');//如果是非数字则也表示数组的元素
+
+    // 字面量创建
+
+    var box = [];//创建空数组
+    var box1 = [10, 20, 30];
+
+    console.log(box1[1]);//通过下标来获取指定元素
+
+    // length  属性  代表数组长度
+    var color = ['red', 'blue', 'yellow'];
+    console.log(color.length);
+    color.length = 4;
+    console.log(color);
+    color.length = 0;
+    console.log(color);
+    
+
+    //获取数组最后一个元素
+    var arr = ['1', '2', '3', '4', '5'];
+    document.write(arr[arr.length-1]);
+
+
+    // 给数组赋值
+    arr[0] = 'write';//如果存在则替换原来的值
+    arr[5] = 'black';//如果不存在则添加该元素到指定下标
+
+    console.log(arr);
+
+    // 循环赋值
+
+    var arr1 = [];
+    // 给数组添加10个元素，每个元素都是下标的乘积
+    for(var i = 0; i<=10; i++){
+        arr1[i] = i*i;
+    }
+    console.log(arr1);
+
+    // 数组的使用
+    // for循环遍历
+    var arr = [1,2,3,4,5,6,7,8,9,10];
+    for(var i= 0; i<arr.length-1; i++){
+        document.write('<br />' + arr[i] );
+    }    
+
+    //for in 遍历数组里的元素
+    //item是数组的下标
+    for(var item in arr){
+        document.write('<br />' + arr[item])
+    }
+    
+
+
+
+    //排序
+    // 冒泡排序
+
+    var arr = [1,5,3,2,5,7,2];
+    for(var i = 0; i<arr.length-1; i++){
+        for(var j = 0; j<arr.length-1-i; i++){
+            if(arr[j]>arr[i]){
+                var tmp = arr[j];
+                arr[j] = arr[i];
+                arr[j+1] = tmp;
+            }
+        }
+    }
+
+    // 快速排序
+    var arr = [5,4,1,5,67,8]
+    for(var i = 0; i<arr.length-1; i++){
+        for(var j = 1+i; j<arr.length; i++){
+            if(arr[i]>arr[j]){
+                var tmp = arr[i];
+                arr[i] = arr[i];
+                arr[j] = tmp;
+            }
+        }
+    }
+    </script>
+</body>
+</html>
